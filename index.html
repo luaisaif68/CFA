@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>CFA Schedule 2026</title>
+<style>
+  :root {
+    --bg:#f6f7f8;
+    --card:#ffffff;
+    --text:#17191c;
+    --muted:#697079;
+    --line:#e4e7eb;
+    --accent:#1f6f5c;
+    --accent-soft:#e8f3ef;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  .wrap { max-width:860px; margin:0 auto; padding:20px 14px 48px; }
+  header { margin-bottom:16px; }
+  h1 { font-size:28px; margin:0 0 4px; letter-spacing:-.02em; }
+  .sub { color:var(--muted); font-size:14px; }
+  .next {
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:18px; margin:18px 0; box-shadow:0 2px 10px rgba(0,0,0,.035);
+  }
+  .eyebrow {
+    color:var(--accent); font-weight:700; font-size:12px;
+    letter-spacing:.08em; text-transform:uppercase; margin-bottom:8px;
+  }
+  .next-date { font-size:16px; color:var(--muted); margin-bottom:8px; }
+  .next-name { font-size:30px; font-weight:750; direction:rtl; text-align:left; }
+  .cycle-badge {
+    display:inline-block; margin-top:10px; padding:5px 9px; border-radius:999px;
+    background:var(--accent-soft); color:var(--accent); font-size:12px; font-weight:700;
+  }
+  .table-card {
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    overflow:hidden;
+  }
+  table { width:100%; border-collapse:collapse; }
+  th {
+    text-align:left; font-size:12px; color:var(--muted); font-weight:700;
+    padding:11px 12px; border-bottom:1px solid var(--line); background:#fbfbfc;
+  }
+  td { padding:13px 12px; border-bottom:1px solid var(--line); vertical-align:top; }
+  tr:last-child td { border-bottom:0; }
+  .cycle-row td {
+    background:#f1f3f5; font-size:12px; font-weight:800; color:#4d535a;
+    padding:8px 12px;
+  }
+  .next-row td { background:var(--accent-soft); }
+  .past-row td { color:#a0a6ad; background:#fafafa; }
+  .past-row .person { font-weight:500; }
+  .share-wrap { margin-top:14px; display:flex; justify-content:flex-start; }
+  .share-btn {
+    appearance:none; border:1px solid var(--line); background:#fff; color:var(--text);
+    border-radius:10px; padding:9px 12px; font-size:14px; font-weight:700; cursor:pointer;
+  }
+  .share-btn:hover { background:#f7f8f9; }
+  .share-msg { margin-left:10px; color:var(--muted); font-size:12px; align-self:center; }
+  .date { white-space:nowrap; color:#3e444b; }
+  .person { font-weight:650; }
+  .actual,.comment { color:#555d66; }
+  footer { color:var(--muted); font-size:12px; text-align:center; margin-top:18px; }
+  @media (max-width:640px) {
+    .wrap { padding:14px 10px 36px; }
+    h1 { font-size:24px; }
+    .next-name { font-size:27px; }
+    th:nth-child(3), th:nth-child(4),
+    td:nth-child(3), td:nth-child(4) { display:none; }
+    td, th { padding:12px 10px; }
+    .table-card { border-radius:12px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>CFA Schedule 2026</h1>
+    <div class="sub">Weekly Saturday rotation</div>
+  </header>
+
+  <section class="next">
+    <div class="eyebrow">Next Up</div>
+    <div class="next-date">Aug 1, 2026</div>
+    <div class="next-name">لؤي أبوسنا</div>
+    <div class="cycle-badge">Cycle 13</div>
+    <div class="share-wrap">
+      <button class="share-btn" id="shareSchedule" type="button">Share Schedule</button>
+      <span class="share-msg" id="shareMessage" aria-live="polite"></span>
+    </div>
+  </section>
+
+  <section class="table-card">
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Planned</th>
+          <th>Actual</th>
+          <th>Comment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="cycle-row"><td colspan="4">Cycle 13</td></tr>
+    <tr data-date="2026-08-01">
+      <td class="date">Aug 1, 2026</td>
+      <td class="person" dir="rtl">لؤي أبوسنا</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-08-08">
+      <td class="date">Aug 8, 2026</td>
+      <td class="person" dir="rtl">رائد أبوفراس</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-08-15">
+      <td class="date">Aug 15, 2026</td>
+      <td class="person" dir="rtl">خالد أبوأمير</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-08-22">
+      <td class="date">Aug 22, 2026</td>
+      <td class="person" dir="rtl">نعيم أبومحمد</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-08-29">
+      <td class="date">Aug 29, 2026</td>
+      <td class="person" dir="rtl">حسين أبويوسف</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-09-05">
+      <td class="date">Sep 5, 2026</td>
+      <td class="person" dir="rtl">مروان أبومروه</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-09-12">
+      <td class="date">Sep 12, 2026</td>
+      <td class="person" dir="rtl">ابراهيم أبوعبدالله</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-09-19">
+      <td class="date">Sep 19, 2026</td>
+      <td class="person" dir="rtl">أحمد أبوحاتم</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-09-26">
+      <td class="date">Sep 26, 2026</td>
+      <td class="person" dir="rtl">محمد أبولجين</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-10-03">
+      <td class="date">Oct 3, 2026</td>
+      <td class="person" dir="rtl">ياسر أبوعمرو</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-10-10">
+      <td class="date">Oct 10, 2026</td>
+      <td class="person" dir="rtl">حسين أبومحمد</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-10-17">
+      <td class="date">Oct 17, 2026</td>
+      <td class="person" dir="rtl">محمود أبومحمد</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr><tr class="cycle-row"><td colspan="4">Cycle 14</td></tr>
+    <tr class="" data-date="2026-10-24">
+      <td class="date">Oct 24, 2026</td>
+      <td class="person" dir="rtl">لؤي أبوسنا</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-10-31">
+      <td class="date">Oct 31, 2026</td>
+      <td class="person" dir="rtl">رائد أبوفراس</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-11-07">
+      <td class="date">Nov 7, 2026</td>
+      <td class="person" dir="rtl">خالد أبوأمير</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-11-14">
+      <td class="date">Nov 14, 2026</td>
+      <td class="person" dir="rtl">نعيم أبومحمد</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-11-21">
+      <td class="date">Nov 21, 2026</td>
+      <td class="person" dir="rtl">حسين أبويوسف</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-11-28">
+      <td class="date">Nov 28, 2026</td>
+      <td class="person" dir="rtl">مروان أبومروه</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-12-05">
+      <td class="date">Dec 5, 2026</td>
+      <td class="person" dir="rtl">ابراهيم أبوعبدالله</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-12-12">
+      <td class="date">Dec 12, 2026</td>
+      <td class="person" dir="rtl">أحمد أبوحاتم</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-12-19">
+      <td class="date">Dec 19, 2026</td>
+      <td class="person" dir="rtl">محمد أبولجين</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2026-12-26">
+      <td class="date">Dec 26, 2026</td>
+      <td class="person" dir="rtl">ياسر أبوعمرو</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2027-01-02">
+      <td class="date">Jan 2, 2027</td>
+      <td class="person" dir="rtl">حسين أبومحمد</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+    <tr class="" data-date="2027-01-09">
+      <td class="date">Jan 9, 2027</td>
+      <td class="person" dir="rtl">محمود أبومحمد</td>
+      <td class="person actual" dir="rtl">—</td>
+      <td class="comment" dir="auto">—</td>
+    </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer id="lastUpdated">Last updated: —</footer>
+</div>
+
+<script>
+(function () {
+  function localISODate(d) {
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, "0");
+    const day = String(d.getDate()).padStart(2, "0");
+    return `${y}-${m}-${day}`;
+  }
+
+  const now = new Date();
+  const today = localISODate(now);
+  const rows = Array.from(document.querySelectorAll("tr[data-date]"));
+
+  rows.forEach(row => {
+    row.classList.remove("next-row", "past-row");
+    if (row.dataset.date < today) row.classList.add("past-row");
+  });
+
+  // Highlight today's scheduled row if there is one.
+  const exact = rows.find(row => row.dataset.date === today);
+  if (exact) exact.classList.add("next-row");
+
+  // "Next Up" shows today if scheduled, otherwise the next upcoming date.
+  const target = exact || rows.find(row => row.dataset.date > today);
+  if (target) {
+    const cells = target.querySelectorAll("td");
+    const dateText = cells[0]?.textContent.trim() || "";
+    const nameText = cells[1]?.textContent.trim() || "";
+
+    let p = target.previousElementSibling;
+    while (p && !p.classList.contains("cycle-row")) p = p.previousElementSibling;
+    const cycleText = p?.textContent.trim() || "";
+
+    const dateEl = document.querySelector(".next-date");
+    const nameEl = document.querySelector(".next-name");
+    const badgeEl = document.querySelector(".cycle-badge");
+    if (dateEl) dateEl.textContent = dateText;
+    if (nameEl) nameEl.textContent = nameText;
+    if (badgeEl && cycleText) badgeEl.textContent = cycleText;
+  } else {
+    const dateEl = document.querySelector(".next-date");
+    const nameEl = document.querySelector(".next-name");
+    if (dateEl) dateEl.textContent = "";
+    if (nameEl) nameEl.textContent = "No upcoming dates";
+  }
+
+  // Last updated uses the webpage file's actual modification timestamp when available.
+  const lastUpdated = document.getElementById("lastUpdated");
+  if (lastUpdated) {
+    const modified = new Date(document.lastModified);
+    const formatted = modified.toLocaleDateString(undefined, {
+      month: "short", day: "numeric", year: "numeric"
+    });
+    lastUpdated.textContent = `Last updated: ${formatted}`;
+  }
+
+  // Native share on supported phones/browsers; clipboard fallback elsewhere.
+  const shareBtn = document.getElementById("shareSchedule");
+  const shareMsg = document.getElementById("shareMessage");
+
+  async function shareSchedule() {
+    const shareData = {
+      title: "CFA Schedule 2026",
+      text: "CFA Schedule 2026",
+      url: window.location.href
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        if (shareMsg) shareMsg.textContent = "";
+      } else if (navigator.clipboard) {
+        await navigator.clipboard.writeText(window.location.href);
+        if (shareMsg) shareMsg.textContent = "Link copied";
+        setTimeout(() => { if (shareMsg) shareMsg.textContent = ""; }, 2500);
+      } else {
+        if (shareMsg) shareMsg.textContent = "Copy the page link from your browser";
+      }
+    } catch (err) {
+      // User canceling the share sheet is normal; no error message needed.
+    }
+  }
+
+  if (shareBtn) shareBtn.addEventListener("click", shareSchedule);
+})();
+</script>
+
+</body>
+</html>
