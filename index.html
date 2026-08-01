@@ -1,375 +1,750 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#073c2c">
-<title>CFA Schedule 2026</title>
-<style>
-:root{--green:#073c2c;--green2:#0a4936;--gold:#e7b84c;--cream:#fbfaf6;--line:#dde3df;--today:#e7f3ec;--muted:#727b76}
-*{box-sizing:border-box} html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:#17211d;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
-a{color:inherit;text-decoration:none}
-header{background:linear-gradient(135deg,var(--green),#022b20);color:#fff;padding:18px 20px}
-.header-inner{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:14px}
-.logo{width:72px;height:72px;border:3px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font:700 30px Georgia,serif;letter-spacing:-2px}
-.brand-title{font-weight:800;font-size:28px;color:var(--gold);line-height:1.05}
-.brand-year{font-weight:700;color:#f3d781;margin-top:4px}
-nav{display:flex;gap:24px;font-size:14px;font-weight:800}
-nav a:hover{color:var(--gold)}
-.nextbar{background:#fff7e4;border-bottom:1px solid #efe0b2;padding:13px 16px}
-.nextbar-inner{max-width:1100px;margin:auto;display:flex;justify-content:center;align-items:center;gap:9px;flex-wrap:wrap}
-.next-label{background:#ffefbf;border-radius:8px;padding:7px 10px;font-weight:800}
-.next-text{font-weight:800} .next-meta{color:#4b5751}
-.container{max-width:1100px;margin:24px auto 48px;padding:0 16px}
-.hero{display:grid;grid-template-columns:minmax(300px,.82fr) minmax(430px,1.25fr);gap:18px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 8px 24px rgba(0,0,0,.06)}
-.quote-card{display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center;padding:18px;border-radius:14px}
-.quote{direction:rtl;white-space:pre-line;font-family:Tahoma,Arial,sans-serif;font-size:24px;line-height:1.95;color:#16261f}
-.quote-card img{max-width:220px;max-height:170px;object-fit:contain;margin-top:12px}
-.group{border-radius:14px;overflow:hidden;background:#171717;display:flex;align-items:center;justify-content:center;min-height:360px}
-.group img{width:100%;max-height:360px;object-fit:contain;display:block}
-.section-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:28px 4px 12px}
-.section-head h2{margin:0;color:var(--green);font-size:30px}
-button{border:0;border-radius:10px;background:var(--green);color:white;font-weight:800;padding:11px 16px;cursor:pointer}
-.table-wrap{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:auto;box-shadow:0 6px 18px rgba(0,0,0,.04)}
-table{width:100%;border-collapse:collapse;min-width:980px}
-th{background:var(--green);color:#fff;padding:13px 14px;text-align:left;font-size:13px}
-td{padding:13px 14px;border-bottom:1px solid var(--line);font-size:14px}
-.cycle-row td{background:#eef2ef;color:#56615c;font-size:12px;font-weight:800;padding:8px 14px}
-.schedule-row.past td{color:#a2a8a5;background:#fbfbfa}
-.schedule-row.today td{background:var(--today);font-weight:750}
-.name,.actual{font-weight:700}
-.note{margin:16px 0;background:#eef7f1;border-radius:12px;padding:13px 16px;color:#30443a}
-.bottom{display:grid;grid-template-columns:1.35fr .85fr;gap:20px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
-.memes{display:flex;gap:12px;align-items:end;justify-content:center}
-.memes img{height:170px;max-width:48%;object-fit:contain;display:block}
-.connect{border-left:1px solid var(--line);padding-left:24px}
-.connect h3{margin-top:0;color:var(--green)}
-footer{background:var(--green);color:#eaf0ed;padding:16px 20px;font-size:13px}
-.footer-inner{max-width:1100px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:820px){nav{display:none}.logo{width:58px;height:58px;font-size:24px}.brand-title{font-size:22px}.hero{grid-template-columns:1fr}.group{min-height:auto}.group img{height:auto}.quote{font-size:21px}.bottom{grid-template-columns:1fr}.connect{border-left:0;border-top:1px solid var(--line);padding:18px 0 0}}
-@media(max-width:520px){.container{padding:0 10px}header{padding:14px 12px}.hero{padding:10px}.quote-card{padding:10px}.quote{font-size:18px;line-height:1.8}.quote-card img{max-width:170px;max-height:145px}.section-head h2{font-size:25px}.memes img{height:140px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#073c2c">
+  <title>CFA Schedule 2026</title>
+  <style>
+    :root {
+      --green: #073c2c;
+      --green2: #0a4936;
+      --gold: #e7b84c;
+      --cream: #fbfaf6;
+      --line: #dde3df;
+      --today: #e7f3ec;
+      --muted: #727b76
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: #17211d;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--green), #022b20);
+      color: #fff;
+      padding: 18px 20px
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      border: 3px solid var(--gold);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      font: 700 30px Georgia, serif;
+      letter-spacing: -2px
+    }
+
+    .brand-title {
+      font-weight: 800;
+      font-size: 28px;
+      color: var(--gold);
+      line-height: 1.05
+    }
+
+    .brand-year {
+      font-weight: 700;
+      color: #f3d781;
+      margin-top: 4px
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+      font-weight: 800
+    }
+
+    nav a:hover {
+      color: var(--gold)
+    }
+
+    .nextbar {
+      background: #fff7e4;
+      border-bottom: 1px solid #efe0b2;
+      padding: 13px 16px
+    }
+
+    .nextbar-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      flex-wrap: wrap
+    }
+
+    .next-label {
+      background: #ffefbf;
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-weight: 800
+    }
+
+    .next-text {
+      font-weight: 800
+    }
+
+    .next-meta {
+      color: #4b5751
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 24px auto 48px;
+      padding: 0 16px
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 440px;
+      gap: 14px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+      align-items: center;
+    }
+
+    .quote-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8px 12px;
+      border-radius: 14px;
+    }
+
+    .quote {
+      direction: rtl;
+      white-space: pre-line;
+      font-family: Tahoma, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.55;
+      color: #16261f;
+    }
+
+    .quote-card img {
+      max-width: 135px;
+      max-height: 95px;
+      object-fit: contain;
+      margin-top: 4px;
+    }
+
+    .group {
+      border-radius: 14px;
+      overflow: hidden;
+      background: #171717;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 0;
+      max-width: 440px;
+      justify-self: center;
+    }
+
+    .group img {
+      width: auto;
+      max-width: 100%;
+      max-height: 280px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin: 28px 4px 12px
+    }
+
+    .section-head h2 {
+      margin: 0;
+      color: var(--green);
+      font-size: 30px
+    }
+
+    button {
+      border: 0;
+      border-radius: 10px;
+      background: var(--green);
+      color: white;
+      font-weight: 800;
+      padding: 11px 16px;
+      cursor: pointer
+    }
+
+    .table-wrap {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: auto;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, .04)
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 980px
+    }
+
+    th {
+      background: var(--green);
+      color: #fff;
+      padding: 13px 14px;
+      text-align: left;
+      font-size: 13px
+    }
+
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px
+    }
+
+    .cycle-row td {
+      background: #eef2ef;
+      color: #56615c;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 8px 14px
+    }
+
+    .schedule-row.past td {
+      color: #a2a8a5;
+      background: #fbfbfa
+    }
+
+    .schedule-row.today td {
+      background: var(--today);
+      font-weight: 750
+    }
+
+    .name,
+    .actual {
+      font-weight: 700
+    }
+
+    .note {
+      margin: 16px 0;
+      background: #eef7f1;
+      border-radius: 12px;
+      padding: 13px 16px;
+      color: #30443a
+    }
+
+    .bottom {
+      display: grid;
+      grid-template-columns: 1.35fr .85fr;
+      gap: 20px;
+      align-items: center;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px
+    }
+
+    .memes {
+      display: flex;
+      gap: 12px;
+      align-items: end;
+      justify-content: center
+    }
+
+    .memes img {
+      height: 170px;
+      max-width: 48%;
+      object-fit: contain;
+      display: block
+    }
+
+    .connect {
+      border-left: 1px solid var(--line);
+      padding-left: 24px
+    }
+
+    .connect h3 {
+      margin-top: 0;
+      color: var(--green)
+    }
+
+    footer {
+      background: var(--green);
+      color: #eaf0ed;
+      padding: 16px 20px;
+      font-size: 13px
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap
+    }
+
+    @media(max-width:820px) {
+      nav {
+        display: none
+      }
+
+      .logo {
+        width: 58px;
+        height: 58px;
+        font-size: 24px
+      }
+
+      .brand-title {
+        font-size: 22px
+      }
+
+      .hero {
+        grid-template-columns: 1fr
+      }
+
+      .group {
+        min-height: auto
+      }
+
+      .group img {
+        height: auto
+      }
+
+      .quote {
+        font-size: 21px
+      }
+
+      .bottom {
+        grid-template-columns: 1fr
+      }
+
+      .connect {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+        padding: 18px 0 0
+      }
+    }
+
+    @media(max-width:520px) {
+      .container {
+        padding: 0 10px
+      }
+
+      header {
+        padding: 14px 12px
+      }
+
+      .hero {
+        padding: 10px
+      }
+
+      .quote-card {
+        padding: 10px
+      }
+
+      .quote {
+        font-size: 18px;
+        line-height: 1.8
+      }
+
+      .quote-card img {
+        max-width: 170px;
+        max-height: 145px
+      }
+
+      .section-head h2 {
+        font-size: 25px
+      }
+
+      .memes img {
+        height: 140px
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header>
-  <div class="header-inner">
-    <div class="brand">
-      <div class="logo">CFA</div>
-      <div><div class="brand-title">CFA SCHEDULE</div><div class="brand-year">2026</div></div>
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo">CFA</div>
+        <div>
+          <div class="brand-title">CFA SCHEDULE</div>
+          <div class="brand-year">2026</div>
+        </div>
+      </div>
+      <nav><a href="#schedule">SCHEDULE</a><a href="#next">UPCOMING</a><a href="#" id="shareTop">SHARE</a></nav>
     </div>
-    <nav><a href="#schedule">SCHEDULE</a><a href="#next">UPCOMING</a><a href="#" id="shareTop">SHARE</a></nav>
+  </header>
+
+  <div class="nextbar" id="next">
+    <div class="nextbar-inner">
+      <span class="next-label">Next Up:</span>
+      <span class="next-text" id="nextText">Loading schedule…</span>
+      <span>•</span>
+      <span class="next-meta">Breakfast · 7:30 AM - 9:00 AM · CFA Avalon</span>
+    </div>
   </div>
-</header>
 
-<div class="nextbar" id="next">
-  <div class="nextbar-inner">
-    <span class="next-label">Next Up:</span>
-    <span class="next-text" id="nextText">Loading schedule…</span>
-    <span>•</span>
-    <span class="next-meta">Breakfast · 7:30 AM - 9:00 AM · CFA Avalon</span>
-  </div>
-</div>
+  <main class="container">
+    <section class="hero">
+      <div class="quote-card">
+        <div class="quote">قال رسول الله ﷺ:
+          «إن المتحابين في الله تعالى لترى غرفهم في الجنة كالكوكب الطالع الشرقي أو الغربي.
+          فيقال من هؤلاء؟ فيقال: هؤلاء المتحابون في الله عز وجل»
+          (رواه أحمد).</div>
+        <img src="wadha.png" alt="">
+      </div>
+      <div class="group"><img src="group.png" alt="CFA group"></div>
+    </section>
 
-<main class="container">
-  <section class="hero">
-    <div class="quote-card">
-      <div class="quote">قال رسول الله ﷺ:
-«إن المتحابين في الله تعالى لترى غرفهم في الجنة كالكوكب الطالع الشرقي أو الغربي.
-فيقال من هؤلاء؟ فيقال: هؤلاء المتحابون في الله عز وجل»
-(رواه أحمد).</div>
-      <img src="wadha.png" alt="">
-    </div>
-    <div class="group"><img src="group.png" alt="CFA group"></div>
-  </section>
+    <section id="schedule">
+      <div class="section-head">
+        <h2>▣ SCHEDULE</h2><button id="share1">Share Schedule</button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Day</th>
+              <th>Event</th>
+              <th>Time</th>
+              <th>Location</th>
+              <th>Planned</th>
+              <th>Actual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="cycle-row">
+              <td colspan="7">Cycle 13</td>
+            </tr>
+            <tr class="schedule-row" data-date="2026-08-01">
+              <td>Aug 1, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">لؤي أبوسنا</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-  <section id="schedule">
-    <div class="section-head"><h2>▣ SCHEDULE</h2><button id="share1">Share Schedule</button></div>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Date</th><th>Day</th><th>Event</th><th>Time</th><th>Location</th><th>Planned</th><th>Actual</th></tr></thead>
-        <tbody><tr class="cycle-row"><td colspan="7">Cycle 13</td></tr>
-<tr class="schedule-row" data-date="2026-08-01">
-<td>Aug 1, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">لؤي أبوسنا</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-08-08">
+              <td>Aug 8, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">رائد أبوفراس</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-08-08">
-<td>Aug 8, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">رائد أبوفراس</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-08-15">
+              <td>Aug 15, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">خالد أبوأمير</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-08-15">
-<td>Aug 15, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">خالد أبوأمير</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-08-22">
+              <td>Aug 22, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">نعيم أبومحمد</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-08-22">
-<td>Aug 22, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">نعيم أبومحمد</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-08-29">
+              <td>Aug 29, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">حسين أبويوسف</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-08-29">
-<td>Aug 29, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">حسين أبويوسف</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-09-05">
+              <td>Sep 5, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">مروان أبومروه</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-09-05">
-<td>Sep 5, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">مروان أبومروه</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-09-12">
+              <td>Sep 12, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">ابراهيم أبوعبدالله</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-09-12">
-<td>Sep 12, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">ابراهيم أبوعبدالله</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-09-19">
+              <td>Sep 19, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">أحمد أبوحاتم</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-09-19">
-<td>Sep 19, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">أحمد أبوحاتم</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-09-26">
+              <td>Sep 26, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">محمد أبولجين</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-09-26">
-<td>Sep 26, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">محمد أبولجين</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-10-03">
+              <td>Oct 3, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">ياسر أبوعمرو</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-10-03">
-<td>Oct 3, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">ياسر أبوعمرو</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-10-10">
+              <td>Oct 10, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">حسين أبومحمد</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-10-10">
-<td>Oct 10, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">حسين أبومحمد</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-10-17">
+              <td>Oct 17, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">محمود أبومحمد</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
+            <tr class="cycle-row">
+              <td colspan="7">Cycle 14</td>
+            </tr>
+            <tr class="schedule-row" data-date="2026-10-24">
+              <td>Oct 24, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">لؤي أبوسنا</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-10-17">
-<td>Oct 17, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">محمود أبومحمد</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
-<tr class="cycle-row"><td colspan="7">Cycle 14</td></tr>
-<tr class="schedule-row" data-date="2026-10-24">
-<td>Oct 24, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">لؤي أبوسنا</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-10-31">
+              <td>Oct 31, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">رائد أبوفراس</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-10-31">
-<td>Oct 31, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">رائد أبوفراس</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-11-07">
+              <td>Nov 7, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">خالد أبوأمير</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-11-07">
-<td>Nov 7, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">خالد أبوأمير</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-11-14">
+              <td>Nov 14, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">نعيم أبومحمد</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-11-14">
-<td>Nov 14, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">نعيم أبومحمد</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-11-21">
+              <td>Nov 21, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">حسين أبويوسف</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-11-21">
-<td>Nov 21, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">حسين أبويوسف</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-11-28">
+              <td>Nov 28, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">مروان أبومروه</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-11-28">
-<td>Nov 28, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">مروان أبومروه</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-12-05">
+              <td>Dec 5, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">ابراهيم أبوعبدالله</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-12-05">
-<td>Dec 5, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">ابراهيم أبوعبدالله</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-12-12">
+              <td>Dec 12, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">أحمد أبوحاتم</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-12-12">
-<td>Dec 12, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">أحمد أبوحاتم</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-12-19">
+              <td>Dec 19, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">محمد أبولجين</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-12-19">
-<td>Dec 19, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">محمد أبولجين</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2026-12-26">
+              <td>Dec 26, 2026</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">ياسر أبوعمرو</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2026-12-26">
-<td>Dec 26, 2026</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">ياسر أبوعمرو</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2027-01-02">
+              <td>Jan 2, 2027</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">حسين أبومحمد</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
 
-<tr class="schedule-row" data-date="2027-01-02">
-<td>Jan 2, 2027</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">حسين أبومحمد</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
+            <tr class="schedule-row" data-date="2027-01-09">
+              <td>Jan 9, 2027</td>
+              <td>Saturday</td>
+              <td>Breakfast</td>
+              <td>7:30 AM - 9:00 AM</td>
+              <td>CFA Avalon</td>
+              <td class="name" dir="rtl">محمود أبومحمد</td>
+              <td class="actual" dir="rtl">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note"><strong>Note:</strong> Schedule is subject to change. Please check back regularly for updates.
+      </div>
+    </section>
 
-<tr class="schedule-row" data-date="2027-01-09">
-<td>Jan 9, 2027</td>
-<td>Saturday</td>
-<td>Breakfast</td>
-<td>7:30 AM - 9:00 AM</td>
-<td>CFA Avalon</td>
-<td class="name" dir="rtl">محمود أبومحمد</td>
-<td class="actual" dir="rtl">—</td>
-</tr>
-</tbody>
-      </table>
-    </div>
-    <div class="note"><strong>Note:</strong> Schedule is subject to change. Please check back regularly for updates.</div>
-  </section>
+    <section class="bottom">
+      <div class="memes">
+        <img src="ommal.png" alt="">
+        <img src="layasheikh.png" alt="">
+      </div>
+      <div class="connect">
+        <h3>STAY CONNECTED</h3>
+        <p>Keep the CFA schedule handy and share it with the group.</p>
+        <button id="share2">Share Schedule</button>
+      </div>
+    </section>
+  </main>
 
-  <section class="bottom">
-    <div class="memes">
-      <img src="ommal.png" alt="">
-      <img src="layasheikh.png" alt="">
-    </div>
-    <div class="connect">
-      <h3>STAY CONNECTED</h3>
-      <p>Keep the CFA schedule handy and share it with the group.</p>
-      <button id="share2">Share Schedule</button>
-    </div>
-  </section>
-</main>
+  <footer>
+    <div class="footer-inner"><span>© 2026 CFA.</span><span id="updated">Last updated: —</span></div>
+  </footer>
 
-<footer><div class="footer-inner"><span>© 2026 CFA.</span><span id="updated">Last updated: —</span></div></footer>
-
-<script>
-(function(){
-  function iso(d){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
-  const today=iso(new Date()), rows=[...document.querySelectorAll('.schedule-row')];
-  let exact=null, upcoming=null;
-  rows.forEach(r=>{const d=r.dataset.date;if(d<today)r.classList.add('past');if(d===today){r.classList.add('today');exact=r}if(!upcoming&&d>today)upcoming=r});
-  const target=exact||upcoming;
-  const next=document.getElementById('nextText');
-  if(target){const c=target.querySelectorAll('td');next.textContent=`${c[1].textContent.trim()}, ${c[0].textContent.trim()} — ${c[5].textContent.trim()}`;}
-  else next.textContent='No upcoming dates';
-  const mod=new Date(document.lastModified);
-  document.getElementById('updated').textContent='Last updated: '+mod.toLocaleDateString(undefined,{month:'short',day:'numeric',year:'numeric'});
-  async function share(){
-    const data={title:'CFA Schedule 2026',text:'CFA Schedule 2026',url:window.location.href};
-    try{if(navigator.share)await navigator.share(data);else if(navigator.clipboard){await navigator.clipboard.writeText(window.location.href);alert('Schedule link copied.')}}catch(e){}
-  }
-  document.getElementById('share1').onclick=share;
-  document.getElementById('share2').onclick=share;
-  document.getElementById('shareTop').onclick=e=>{e.preventDefault();share()};
-})();
-</script>
+  <script>
+    (function () {
+      function iso(d) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; }
+      const today = iso(new Date()), rows = [...document.querySelectorAll('.schedule-row')];
+      let exact = null, upcoming = null;
+      rows.forEach(r => { const d = r.dataset.date; if (d < today) r.classList.add('past'); if (d === today) { r.classList.add('today'); exact = r } if (!upcoming && d > today) upcoming = r });
+      const target = exact || upcoming;
+      const next = document.getElementById('nextText');
+      if (target) { const c = target.querySelectorAll('td'); next.textContent = `${c[1].textContent.trim()}, ${c[0].textContent.trim()} — ${c[5].textContent.trim()}`; }
+      else next.textContent = 'No upcoming dates';
+      const mod = new Date(document.lastModified);
+      document.getElementById('updated').textContent = 'Last updated: ' + mod.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+      async function share() {
+        const data = { title: 'CFA Schedule 2026', text: 'CFA Schedule 2026', url: window.location.href };
+        try { if (navigator.share) await navigator.share(data); else if (navigator.clipboard) { await navigator.clipboard.writeText(window.location.href); alert('Schedule link copied.') } } catch (e) { }
+      }
+      document.getElementById('share1').onclick = share;
+      document.getElementById('share2').onclick = share;
+      document.getElementById('shareTop').onclick = e => { e.preventDefault(); share() };
+    })();
+  </script>
 </body>
+
 </html>
